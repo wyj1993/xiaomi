@@ -41,8 +41,121 @@
     right:0px; 
     padding:2rem 1rem;
     text-align:center;
-    border:1px solid red;
     box-sizing:border-box;
     line-height: 34px;
     display:none;
+    box-shadow:-1px 3px  10px #ccc;
+    background:#fff;
 } 
+.header>.container{
+    border:1px solid red;
+    height:100px;
+}
+.header>.container>.head-logo{
+    height:55px;
+    width:55px;
+    margin-top:22px;
+    position:relative;
+    background-color:#ff6700;
+}
+.header>.container>.head-logo h1{
+    height:100%;
+}
+.header>.container>.head-logo a{
+    width:55px;
+    height:55px;
+    position:absolute;
+    overflow:hidden;
+    margin:auto;
+    top:0;
+    bottom:0;
+    text-indent:-9999px;
+    background-image:url(../img/header/logo.png);
+}
+.header>.container>.nav>ul>li{
+    float:left;
+    padding:0 10px;
+    height:100%;
+    line-height:100px;
+}
+.header>.container>.nav>ul>li:first-child>a{
+    display:block;
+    background:url(../img/header/collection.gif);
+    height:63px;
+    width:166px;
+    margin-top:18px;
+}
+.header>.container>.nav>ul>li:first-child>a span{
+    height:0;
+    overflow:hidden;
+    display:inline-block;
+}
+.header>.container>.nav>ul>li:hover a{
+    color:#ff6700;
+}
+.header .nav .nav-list{
+    width:820px;
+    height:100px;
+    position: relative;
+    padding-left:10px;
+    font-size:16px;
+    font-weight:500;
+}
+.header>.container .search{
+    width:290px;
+    margin-top:25px;
+}
+.header>.container .search form{
+    width:100%;
+    height:50px;
+    position:relative;
+}
+.header>.container .search form input{
+    height:48px;
+    position:absolute;
+    line-height:48px;
+    border:1px solid #ff6700;
+    box-sizing:content-box;
+    outline:0;
+}
+.header>.container .search form input.text{
+    width:226px;  
+    right:51px;
+    font-size:20px;
+    text-indent:5px;
+}
+.header>.container .search form input.text+input{
+    width:50px;
+    right:0;
+    background:#fff;
+    font-size:22px;
+    transition:all 0.2s;
+    border-left:0;
+}
+.header>.container .search form input.text+input:hover{
+    background:#ff6700;
+    color:#fff;
+}
+.header .search .search-hot-words{
+    position:absolute;
+    right:55px;
+    top:15px;
+}
+.header .search .search-hot-words a{
+    background:#ddd;
+    padding:0 5px;
+    font-size:12px;
+}
+.header .search .search-hot-words a:hover{
+    background:#ff6700;
+    color:#fff;
+}
+.header .search  .keyword-list{
+    position:absolute;
+    top:49px;
+    border:1px solid #ff6700;
+    width:226px;
+    right:51px;
+    border-top:0;
+}
+
