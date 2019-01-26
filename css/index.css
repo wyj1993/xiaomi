@@ -1,3 +1,4 @@
+/*header*/
 .header>.first-nav{
     height:40px;
     background:#333;
@@ -24,6 +25,39 @@
     background:rgba(126, 123, 123, 0.3);
     padding:0 1rem;
 }
+/* 二维码弹出层 */
+.header .container>.top_nav li.app{
+    position:relative;
+}
+.header .container>.top_nav li.app div{
+    width:124px;
+    position:absolute;
+    font-size:14px;
+    box-shadow:-1px 4px 15px #bbb;
+    left:-30px;
+    display:none;
+    background:#fff;
+    z-index:10;
+}
+.header .container>.top_nav li.app div em{
+    border-bottom:10px solid #fff;
+    border-top:10px solid transparent;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    position:absolute;
+    right:58px;
+    top:-20px;  
+}
+.header .container>.top_nav li.app img{
+    max-width:100px;
+    display:block;
+    margin:0 auto;
+    margin-top:10px;
+}
+.header .container>.top_nav li.app div>span{
+   display:block;
+   text-align:center;
+}
 .header .container>.top_info a:hover,.header .container>.top_nav a:hover{
     color:#fff;
 }
@@ -33,7 +67,7 @@
 .header .container>.top_cart:hover a,.header .container>.top_cart:hover .icon-gouwuche{
     color:rgb(255,103,0);
 }
-.top_cart div{
+.header .container>.top_cart div{
     width:336px;
     height:100px;
     position:absolute;
@@ -48,7 +82,6 @@
     background:#fff;
 } 
 .header>.container{
-    border:1px solid red;
     height:100px;
 }
 .header>.container>.head-logo{
@@ -72,11 +105,13 @@
     text-indent:-9999px;
     background-image:url(../img/header/logo.png);
 }
+/*nav*/
 .header>.container>.nav>ul>li{
     float:left;
     padding:0 10px;
     height:100%;
     line-height:100px;
+    position:relative;
 }
 .header>.container>.nav>ul>li:first-child>a{
     display:block;
@@ -90,9 +125,10 @@
     overflow:hidden;
     display:inline-block;
 }
-.header>.container>.nav>ul>li:hover a{
+.header>.container>.nav>ul>li:hover span.m-nav{
     color:#ff6700;
 }
+/*主导航*/
 .header .nav .nav-list{
     width:820px;
     height:100px;
@@ -100,6 +136,37 @@
     padding-left:10px;
     font-size:16px;
     font-weight:500;
+}
+.header .nav .nav-list>li.xiaomiphone div.phone{
+    position:absolute;
+    left:-250px;
+    border:1px solid red;
+    border-top:1px solid #aaa;
+    padding:20px 0 20px 0;
+    box-shadow:3px 4px 10px #aaa;
+}
+.header .nav .nav-list>li.xiaomiphone div.phone ul>li{
+    width:20%;
+    position:relative;
+    line-height:30px;
+    text-align:center;
+}
+.header .nav .nav-list>li.xiaomiphone div.phone img{
+    max-width:160px;
+    position:absolute;
+    margin:0 auto;
+    left:0;
+    right:0   
+}
+.header .nav .nav-list>li.xiaomiphone div.phone a{
+   display:block;
+   margin-top:120px;
+}
+.header .nav .nav-list>li.xiaomiphone div.phone a:hover{
+    color:#333;
+}
+.header .nav .nav-list>li.xiaomiphone div.phone p{
+   color:#ff6700; 
 }
 .header>.container .search{
     width:290px;
@@ -114,7 +181,7 @@
     height:48px;
     position:absolute;
     line-height:48px;
-    border:1px solid #ff6700;
+    border:1px solid #a8a8a8;
     box-sizing:content-box;
     outline:0;
 }
@@ -152,10 +219,23 @@
 }
 .header .search  .keyword-list{
     position:absolute;
-    top:49px;
+    top:50px;
     border:1px solid #ff6700;
     width:226px;
     right:51px;
     border-top:0;
+    background:#fff;
+}
+.header .search  .keyword-list li{
+    padding:0.3rem 0  0.3rem 1rem;
+    position:relative;
+}
+.header .search  .keyword-list li:hover{
+    background:#e8e8e8;
+}
+.header .search  .keyword-list li span.result{
+    color:#aaa;
+    position:absolute;
+    right:10px;
 }
 

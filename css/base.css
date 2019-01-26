@@ -29,8 +29,14 @@ li{
     display:block;
     clear:both;
 }
-/*
+
 .clearfix:before{
     content: '';
     display: table;
-}*/
+}
+.po_ab{
+    position:absolute;
+    margin:0 auto;
+    left:0;
+    right:0
+}
