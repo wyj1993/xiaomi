@@ -1,0 +1,36 @@
+body {
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+.w{
+    width:1226px;
+    margin:0 auto;
+}
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+li{
+    list-style:none;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*
+.clearfix:before{
+    content: '';
+    display: table;
+}*/

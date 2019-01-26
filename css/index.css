@@ -1,0 +1,48 @@
+.header>.first-nav{
+    height:40px;
+    background:#333;
+    min-width:1226px;
+}
+.header>.first-nav>.container{
+    position:relative;
+}
+.header .container>.top_nav,.header .container>.top_cart,.header .container>.top_info{
+    line-height:40px;    
+}
+.header .container>.top_info a,.header .container>.top_cart a,.header .container>.top_nav a{
+    color:#b0b0b0;
+    display:inline-block;
+}
+.header .sep{
+    color:rgb(87, 67, 67);
+    margin:0 0.4rem;
+}
+.header .container>.top_info{
+    margin-right:2rem;
+}
+.header .container>.top_cart{
+    background:rgba(126, 123, 123, 0.3);
+    padding:0 1rem;
+}
+.header .container>.top_info a:hover,.header .container>.top_nav a:hover{
+    color:#fff;
+}
+.header .container>.top_cart:hover{
+    background:#fff;
+}
+.header .container>.top_cart:hover a,.header .container>.top_cart:hover .icon-gouwuche{
+    color:rgb(255,103,0);
+}
+.top_cart div{
+    width:336px;
+    height:100px;
+    position:absolute;
+    top:40px;
+    right:0px; 
+    padding:2rem 1rem;
+    text-align:center;
+    border:1px solid red;
+    box-sizing:border-box;
+    line-height: 34px;
+    display:none;
+} 
