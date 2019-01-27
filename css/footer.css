@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+	text-align: center;
+	/*line-height: 100px;*/
+}
+a{
+	text-decoration: none;
+}
+/* 设置轮播图样式 */
+/* 图片显示样式 */
+.banner_slider{
+	position: relative;
+	background-color: green;
+	margin:0 auto;
+	width:500px;
+	height: 380px;
+	overflow:hidden;
+}
+.banner_slider_pics{
+	width:3000px;
+	height: 100%;
+	margin:0 auto;
+	position: relative;
+	left:-500px;
+}
+.banner_slider_pics>a{
+	width: 500px;
+	height: 380px;
+	display: block;
+	float: left;
+	text-align:center;
+}
+.banner_slider_pics>a> img{
+	width: 100%;
+	height: 380px;
+}
+/* 上一张，下一张按钮样式 */
+.banner_slider_arrow{
+	width: 500px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	margin-bottom: -20px;
+}
+.arrow_item{
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgba(0,0,0,.6);
+	opacity: .6;
+}
+.arrow_item:hover{
+	opacity: .8;
+}
+.prev{
+	position: absolute;
+	left: 10px;
+	padding:10px 7px 10px 7px;
+}
+.next{
+	position: absolute;
+	right: 10px;
+	padding:10px 7px 10px 7px;
+}
+/* 圆点按钮 */
+.banner_slider_dots{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+.dots_item{
+	display: inline-block;
+	width:10px;
+	height: 10px;
+	background-color: #999;
+	border-radius:50%;
+	border:3px solid #fff;
+	margin-right: 10px;
+}
+.dots_active{
+	background-color: #fff;
+	border-color:orange;
+}

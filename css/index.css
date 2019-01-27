@@ -1,7 +1,7 @@
 /*header*/
 .header>.first-nav{
     height:40px;
-    background:#333;
+    background:#333333;
     min-width:1226px;
 }
 .header>.first-nav>.container{
@@ -99,19 +99,22 @@
     height:55px;
     position:absolute;
     overflow:hidden;
-    margin:auto;
+    margin:0 auto;
     top:0;
     bottom:0;
     text-indent:-9999px;
     background-image:url(../img/header/logo.png);
 }
 /*nav*/
-.header>.container>.nav>ul>li{
+.header>.container>.nav>ul.nav-list>li{
     float:left;
     padding:0 10px;
     height:100%;
     line-height:100px;
     position:relative;
+}
+.header>.container>.nav>ul.nav-list>li:first-child{
+    width:168px;
 }
 .header>.container>.nav>ul>li:first-child>a{
     display:block;
@@ -125,47 +128,67 @@
     overflow:hidden;
     display:inline-block;
 }
-.header>.container>.nav>ul>li:hover span.m-nav{
+.header>.container>.nav>ul>li:hover a{
     color:#ff6700;
 }
 /*主导航*/
 .header .nav .nav-list{
     width:820px;
     height:100px;
-    position: relative;
     padding-left:10px;
     font-size:16px;
     font-weight:500;
 }
-.header .nav .nav-list>li.xiaomiphone div.phone{
-    position:absolute;
-    left:-250px;
-    border:1px solid red;
-    border-top:1px solid #aaa;
-    padding:20px 0 20px 0;
-    box-shadow:3px 4px 10px #aaa;
+.header .nav-menu{
+    width:100%;
+    height:229px;
+    position: absolute;
 }
-.header .nav .nav-list>li.xiaomiphone div.phone ul>li{
-    width:20%;
+.header .nav-menu ul{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    padding-top:1rem;
+}
+.header .nav-menu div.item-children{
+    position:absolute;
+    padding:20px 0 20px 0;
+    width:100%;
+    border-top:1px solid #aaa;
+    box-shadow:3px 4px 10px #aaa;
+    transition: box-shadow 0.2s;
+    background-color:#fff;
+    z-index: 12;
+}
+.header .nav-menu div.item-children ul>li{
     position:relative;
     line-height:30px;
     text-align:center;
+    padding:0 1rem;
+    border-right:1px solid #eeeeee;
 }
-.header .nav .nav-list>li.xiaomiphone div.phone img{
+.header .nav-menu div.item-children li p.flag{
+    position: absolute;
+    top:-36px;
+    left:80px;
+    padding:0 1rem;
+    border:1px solid #ff6700;
+    line-height:1;
+}
+.header .nav-menu div.item-children img{
     max-width:160px;
-    position:absolute;
+    /* position:absolute;
     margin:0 auto;
     left:0;
-    right:0   
+    right:0    */
 }
-.header .nav .nav-list>li.xiaomiphone div.phone a{
+.header .nav-menu div.item-children a{
    display:block;
-   margin-top:120px;
 }
-.header .nav .nav-list>li.xiaomiphone div.phone a:hover{
+.header .nav-menu div.item-children a:hover{
     color:#333;
 }
-.header .nav .nav-list>li.xiaomiphone div.phone p{
+.header .nav-menu div.item-children p{
    color:#ff6700; 
 }
 .header>.container .search{
@@ -238,4 +261,67 @@
     position:absolute;
     right:10px;
 }
+/**sub-nav start***/
+.header .container .nav ul.sub-nav{
+    width:200px;
+    /* height:440px; */
+    position:relative;
+    left:-76px;
+    padding:1.5rem 1rem 1.2rem 1.5rem;
+    top:20px;
+    background-color:rgba(77, 61, 61, 0.7);
+    z-index: 11;
+}
+.header .container .nav ul.sub-nav li{
+    line-height:42px;
+}
+.header .container .nav ul.sub-nav li a{
+    color:#fff;
+}
+/**banner start****/
+.banner{
+    position:relative;
+    z-index: 10;
+    width:1226px;
+    overflow:hidden;
+    height:460px;
+}
+.banner div.pic ul{
+    width:4904px;
+    position:absolute;
+} 
+.banner div.pic li img{
+    width:1226px;
+}
+.banner>div:first-child>a{
+    display:block;
+    width:20px; 
+    position: absolute;
+    top:220px;
+    z-index: 10;
+}
+.banner>div:first-child>a em{
+    font-size:30px;
+}
+.banner>div:first-child>a.left-arrow{
+    left:245px;
+}
+.banner>div:first-child>a.right-arrow{
+    right:20px;
+}
+.banner>.indicator ul{
+    position:absolute;
+   bottom:20px;
+   right:540px;
+}
+.banner>.indicator ul li{
+    border-radius:50%;
+    width:10px;
+    height:10px;
+    background:#ccc;
+    margin-right:0.5rem;
 
+}
+.banner>.indicator ul li.active{
+    background:blue;
+}

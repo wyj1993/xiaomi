@@ -1,49 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="font/iconfont.css">
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>
-<style>
-        div{
-            position:relative;
-            float:left;
-            height:100px;
-            border:1px solid red;
-            width:100px;
-        }
-        a{
-            position:absolute;
-            width:55px;
-            height:55px;
-            margin:auto;
-            top:0;
-            bottom:0;
-            overflow:hidden;
-        }
-        /* img{
-            position:absolute;
-        }
-    */
-</style>
-</head>
-<body>       
-   <div>
-       <a href="">
-           <img src="img/header/logo.png" alt="">
-       </a>
-   </div>
-</body>
-</html>   
-    
-    
+ <!-- banner开始啦- -->
+ <div class="banner w">
+        <!-- 左右小耳朵 -->
+        <div >
+            <a data-move="right" class="right-arrow" href="javascript:;"><em class="iconfont icon-gengduo"></em></a>
+            <a data-move="left" class="left-arrow" href="javascript:;"><em class="iconfont icon-fanhui"></em></a>
+        </div>
+        <!-- 轮播图片 -->
+        <div class="pic">
+            <ul class="clearfix" data-toggle="banner">
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner1.jpg" alt=""></a></li>
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner2.jpg" alt=""></a></li>
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner3.jpg" alt=""></a></li>
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- 底下小圆点 -->
+        <div class="indicator">
+            <ul data-toggle="slide">
+                <li class="fl active"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+            </ul>
+        </div>
+
+    </div>

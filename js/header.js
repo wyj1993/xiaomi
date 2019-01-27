@@ -33,6 +33,72 @@ $(function(){
         .siblings("div.search-hot-words").show();
         $(this).siblings(".keyword-list").hide();
     })
+    /**** 子菜单弹出层*** */
+
+   $(".header .nav-list>li").hover(
+       function(){
+        var $li=$(this);
+        var index=$li.index();
+        $li.parents(".container").next().find(`div.child${index}`).show();
+       },
+        function(){
+            var $li=$(this);
+            var index=$li.index();
+            var $div=$li.parents(".container").next().find(`div.child${index}`);
+            if($div.length==0){
+                return ;
+            }
+            if(!$div.is(':hover')){
+                $div.hide();
+            }else{
+                $div.mouseleave(function(){
+                $div.hide();
+                })
+            }
+            }
+        );
+
+  /***banner */
+    var  liWidth=1226,timer=null,moved=0,wait=3000,liCount=4;
+    var  $ul= $("[data-toggle=banner]");//图片
+    var $ulInds=$("[data-toggle=slide]");//小点
+    //定义动画
+    function move(){
+        $ul.animate({left:-liWidth*moved},function(){
+            if(moved===liCount){
+                moved=0;
+                $ul.css("left",0);
+            }
+         $ulInds.children(`:eq(${moved})`).addClass('active').siblings().removeClass('active')
+        });
+    };
+   
+    //启动动画
+    timer=setInterval(function(){
+        moved++;
+        move();
+    },wait);
+    
+    //鼠标进入区域启动定时器或者清除定时器
+    $(".banner").hover(
+        function(){
+        clearInterval(timer);
+    },
+        function(){
+            timer=setInterval(function(){
+                moved++;
+                move();
+            },wait)
+        }
+    )
+    //小圆点事件
+    $ulInds.on("click","li",function(e){
+        moved=$(e.target).index();
+        $ul.stop(true);
+        move();
+    })
+
+
 
 
 
@@ -42,6 +108,27 @@ $(function(){
 
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 
 
 

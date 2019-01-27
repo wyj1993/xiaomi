@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="js/jquery-1.11.3.js"></script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="font/iconfont.css">
-    <script src="js/jquery-1.11.3.js"></script>
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>   
     <script src="js/footer.js"></script>
+  
 </head>
 <body>
     <!-- header头部 -->
@@ -70,32 +71,30 @@
                     <li>
                         <a href="#"><span>全部商品分类</span></a>
                         <div>
-                            <ul>
-                                <li><a href=""></a></li>
+                            <ul class="sub-nav">
+                                <li><a href="javascript:;">手机 电话卡</a><em class="fr  icon-gengduo iconfont "></em></li>
+                                <li><a href="javascript:;">电视 盒子</a><em class="fr  icon-gengduo iconfont "></em></li>
+                                <li><a href="javascript:;">笔记本 平板</a><em class="fr  icon-gengduo iconfont"></em></li>
+                                <li><a href="javascript:;">家电 插线板</a><em class="fr  icon-gengduo iconfont "></em></li>
+                                <li><a href="javascript:;">出行 穿戴</a><em class="fr icon-gengduo  iconfont "></em></li>
+                                <li><a href="javascript:;">智能 路由器</a><em class=" icon-gengduo  fr iconfont "></em></li>
+                                <li><a href="javascript:;">电源 配件</a><em class="fr  icon-gengduo iconfont "></em></li>
+                                <li><a href="javascript:;">健康 儿童</a><em class=" fr icon-gengduo  iconfont "></em></li>
+                                <li><a href="javascript:;">耳机 音箱</a><em class="fr  icon-gengduo iconfont "></em></li>
+                                <li><a href="javascript:;">生活 箱包</a><em class="fr icon-gengduo  iconfont "></em></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="xiaomiphone">
-                        <span class="m-nav">小米手机</span>
-                        <div class="phone w">
-                            <ul>
-                                <li class="fl"><img src="img/header/1-mix3-320.png" alt=""><a href="javascript">小米MIX3</a><p class="price">3200元起</p></li>
-                                <li class="fl"><img src="img/header/1-pc-320-220-mi8.png" alt=""><a href="javascript">小米8青春版</a><p class="price">1399元起</p></li>
-                                <li class="fl"><img src="img/header/1-pc-320-miplay-1.png" alt=""><a href="javascript">小米8</a><p class="price">2600元起</p></li>
-                                <li class="fl"><img src="img/header/1-qingchun-320.png" alt=""><a href="javascript">小米MIX3</a><p class="price">3200元起</p></li>
-                                <li class="fl"><img src="img/header/1-pc-320-220-mi8se.png" alt=""><a href="javascript">小米MIX3</a><p class="price">3200元起</p></li>
-                            </ul>
-                        </div>    
-                    </li>
-                    <li><a href="javascript;;">红米</a></li>
-                    <li><a href="javascript;;">电视</a></li>
-                    <li><a href="javascript;;">笔记本</a></li>
-                    <li><a href="javascript;;">家电</a></li>
-                    <li><a href="javascript;;">新品</a></li>
-                    <li><a href="javascript;;">路由器</a></li>
-                    <li><a href="javascript;;">智能硬件</a></li>
-                    <li><a href="javascript;;">服务</a></li>
-                    <li><a href="javascript;;">社区</a></li>
+                    <li class="miphone"><a href="javascript:;">小米手机</a></li>
+                    <li><a href="javascript:;">红米</a></li>
+                    <li><a href="javascript:;">电视</a></li>
+                    <li><a href="javascript:;">笔记本</a></li>
+                    <li><a href="javascript:;">家电</a></li>
+                    <li><a href="javascript:;">新品</a></li>
+                    <li><a href="javascript:;">路由器</a></li>
+                    <li><a href="javascript:;">智能硬件</a></li>
+                    <li><a href="javascript:;">服务</a></li>
+                    <li><a href="javascript:;">社区</a></li>
                 </ul>
             </div>
             <!-- 搜索框 -->
@@ -122,7 +121,66 @@
                 </form>
             </div>
         </div>
+        <!-- 下拉层菜单 -->
+        <div class="nav-menu ">
+            <div class="item-children child1 hide  clearfix">
+                <ul class="w">
+                    <li><p class="flag">新品<p><img src="img/header/1-mix3-320.png" alt=""><a href="javascript">小米MIX3</a><p class="price">3200元起</p></li>
+                    <li><img src="img/header/1-pc-320-220-mi8.png" alt=""><a href="javascript">小米8青春版</a><p class="price">1399元起</p></li>
+                    <li><img src="img/header/1-pc-320-miplay-1.png" alt=""><a href="javascript">小米8</a><p class="price">2600元起</p></li>
+                    <li><p class="flag">新品<p></span><img src="img/header/1-qingchun-320.png" alt=""><a href="javascript">小米MIX3</a><p class="price">3200元起</p></li>
+                    <li><img src="img/header/1-pc-320-220-mi8se.png" alt=""><a href="javascript">小米MIX3</a><p class="price">3200元起</p></li>
+                </ul>
+            </div>
+            <div class="item-children child2 hide  clearfix">
+                <ul class="w">
+                    <li class="fl"><img src="img/header/2-666320.png" alt=""><a href="javascript">红米pro6</a><p class="price">1600元起</p></li>
+                    <li class="fl"><p class="flag">新品<p></p><img src="img/header/2-6pro320-220.png" alt=""><a href="javascript">红米note5</a><p class="price">2500元起</p></li>
+                    <li class="fl"><p class="flag">新品<p></p><img src="img/header/2-note5-320-220.png" alt=""><a href="javascript">红米note7</a><p class="price">3200元起</p></li>
+                    <li class="fl"><p class="flag">新品<p></p><img src="img/header/2-note5-320-220.png" alt=""><a href="javascript">红米6A</a><p class="price">2800元起</p></li>
+                    <li class="fl"><img src="img/header/1-mix3-320.png" alt=""><a href="javascript">红米8</a><p class="price">3100元起</p></li>
+                </ul>
+            </div>
+            <div class="item-children child3 hide  clearfix">
+                <ul class="w">
+                    <li class="fl"><p class="flag">新品<p></p><img src="img/header/4-32.png" alt=""><a href="javascript">小米电视4s 75英寸</a><p class="price">7200元起</p></li>
+                    <li class="fl"><img src="img/header/4-50.png" alt=""><a href="javascript">小米电视4A 32英寸</a><p class="price">3600元起</p></li>
+                    <li class="fl"><img src="img/header/4A-55.jpg" alt=""><a href="javascript">小米电视4A 32英寸青春版</a><p class="price">3200元起</p></li>
+                    <li class="fl"><p class="flag">热卖<p></p><img src="img/header/4s75.png" alt=""><a href="javascript">小米电视4A 55英寸</a><p class="price">2800元起</p></li>
+                    <li class="fl"><p class="flag">热卖<p></p><img src="img/header/4a43.png" alt=""><a href="javascript">小米电视4C</a><p class="price">3100元起</p></li>
+                    <li class="fl"><p class="flag">新品<p></p><img src="img/header/4a43.png" alt=""><a href="javascript">小米电视4C</a><p class="price">3100元起</p></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <!-- banner开始啦- -->
+    <div class="banner w">
+        <!-- 左右小耳朵 -->
+        <div >
+            <a data-move="right" class="right-arrow" href="javascript:;"><em class="iconfont icon-gengduo"></em></a>
+            <a data-move="left" class="left-arrow" href="javascript:;"><em class="iconfont icon-fanhui"></em></a>
+        </div>
+        <!-- 轮播图片 -->
+        <div class="pic">
+            <ul class="clearfix" data-toggle="banner">
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner1.jpg" alt=""></a></li>
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner2.jpg" alt=""></a></li>
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner3.jpg" alt=""></a></li>
+                <li class="fl"><a href="javascript:;"><img src="img/index/banner4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- 底下小圆点 -->
+        <div class="indicator">
+            <ul data-toggle="slide">
+                <li class="fl active"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--banner结束啦--->
     
 </body>
 </html>
