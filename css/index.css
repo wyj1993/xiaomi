@@ -226,6 +226,7 @@
     position:absolute;
     right:55px;
     top:15px;
+    
 }
 .header .search .search-hot-words a{
     background:#ddd;
@@ -244,6 +245,7 @@
     right:51px;
     border-top:0;
     background:#fff;
+    z-index:9;
 }
 .header .search  .keyword-list li{
     padding:0.3rem 0  0.3rem 1rem;
@@ -277,13 +279,13 @@
 /**banner start****/
 .banner{
     position:relative;
-    z-index: 10;
+    z-index: 5;
     width:1226px;
     overflow:hidden;
     height:460px;
 }
 .banner div.pic ul{
-    width:4904px;
+    width:6130px;
     position:absolute;
 } 
 .banner div.pic li img{
@@ -312,12 +314,17 @@
 }
 .banner>.indicator ul li{
     border-radius:50%;
-    width:10px;
-    height:10px;
-    background:#ccc;
-    margin-right:0.5rem;
+    width:5px;
+    height:5px;
+    background:rgba(255,255,255, .6);
+    margin-right:0.8rem;
+    border:2px solid rgba(22, 20, 20, 0.3);
+    /* box-shadow:0 0 0 3px #5c5a5a; */
 
 }
 .banner>.indicator ul li.active{
-    background:blue;
+    border:2px solid rgba(25, 27, 29, 0.6);
+}
+.banner>.indicator ul li:hover{
+    background:rgba(73, 64, 64, 0.4);
 }

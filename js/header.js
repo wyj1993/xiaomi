@@ -97,6 +97,37 @@ $(function(){
         $ul.stop(true);
         move();
     })
+    /*左右小箭头**/
+        $('[data-move=right]').click(e=>{
+         e.preventDefault();
+        if(!$ul.is(':animated')){
+          moved++;
+        //   $ul.stop(true);//放止定时器和动画叠加
+          move()
+        }
+      })
+      $('[data-move=left]').click(e=>{
+        e.preventDefault();
+        if(!$ul.is(':animated')){
+          if(moved==0){
+            $ul.css('left',-liWidth*liCount)
+            moved = liCount;
+          }
+          moved--;
+        //   $ul.stop(true)
+          move();
+        }
+      })
+      
+    
+
+
+
+
+
+
+
+
 
 
 
