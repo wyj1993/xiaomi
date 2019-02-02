@@ -374,3 +374,14 @@
     color:#333333;
     font-size:14px;
 }
+/** home **/
+.home{
+    margin-top:15px;    
+}
+.home>.home-right img{
+    width:316px;
+    height:170px;
+} 
+.home>.home-right li+li{
+    margin-left:15px;
+}
