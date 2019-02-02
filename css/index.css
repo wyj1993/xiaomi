@@ -378,10 +378,208 @@
 .home{
     margin-top:15px;    
 }
+.home>.home-left{
+    background:#5f5750;
+    width:234px;
+    height:170px;
+}
+.home>.home-left a{
+    color:rgba(255,255,255,0.7);
+    display: block;
+    text-align: center;
+    padding-top:13px;
+}
+.home>.home-left em{
+    font-weight: 500;
+    font-size:24px;
+    width:100%;
+    display: block;
+}
+.home>.home-left ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.home>.home-left ul>li{
+    width:76px;
+    height:82px;
+    padding:0 3px;
+    box-sizing: border-box;
+    position: relative;
+}
+.home>.home-left ul>li.left:before{
+    width:64px;
+    height:1px;
+    top:-1px;
+    left:6px;
+}
+.home>.home-left ul>li.top:after{
+    width:1px;
+    height:70px;
+    top:6px;
+    left:0px;
+}
+.home>.home-left ul>li.left:before,.home>.home-left ul>li.top:after{
+    position:absolute;
+    content:"";
+    background:#665e57;
+}
 .home>.home-right img{
     width:316px;
     height:170px;
 } 
 .home>.home-right li+li{
     margin-left:15px;
+}
+/**开始闪购**/
+.xm-flash{
+    margin-top:20px;
+}
+.xm-flash .flash-head{
+    position: relative;
+}
+.xm-flash .flash-head h2{
+    font-weight: 200;
+    font-size:22px;
+    line-height: 58px;
+    color:#333;
+}
+.xm-flash .flash-head .flash-button{
+    position: absolute;
+    top:24px;
+    right:0;
+}
+.xm-flash .flash-head .flash-button>a{
+    display:block;
+    width:36px;
+    height:24px;
+    line-height: 24px;
+    padding:0 5px;
+    text-align: center;
+    border:1px solid #aaa;
+    box-sizing: border-box;
+}
+.xm-flash .flash-head .flash-button>a:first-child{
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.xm-flash .flash-head .flash-button>a:last-child{
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-left:0;
+}
+.xm-flash .flash-time{
+    width:234px;
+    height:340px;
+    background:#f1eded;
+    box-sizing: border-box;
+    margin-right:14px;
+}
+.xm-flash .flash-time li{
+    text-align:center;
+}
+.xm-flash .flash-detail{
+    width:1240px;
+}
+.xm-flash .flash-detail .time-title{
+    color:#e53935;
+    font-size:21px;
+    padding-top:45px;
+}
+.xm-flash .flash-detail img{
+    margin:25px 0;
+}
+.xm-flash .flash-detail .time-change{
+    font-size:  15px;
+    color:rgba(0,0,0,.54);
+}
+.xm-flash .flash-detail .countdown{
+    width:168px;
+    margin:20px auto;    
+}
+.xm-flash .flash-detail .countdown div.box{
+    width:46px;
+    height: 46px;
+    background:#605751;
+    color:#fff;
+    line-height: 46px;
+    font-size:24px;
+}
+.xm-flash .flash-detail .countdown div.dash{
+    width:15px;
+    height: 46px;
+    color:#605751;
+    line-height: 46px;
+    font-size:28px;
+}
+.xm-flash .flash-detail .flash-goods{
+    width:992px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.xm-flash .flash-detail .good-item{
+    width:234px;
+    height:340px;
+    background:#efefef;
+    margin-right:14px;
+}
+.xm-flash .flash-detail .good-item img{
+    width:160px;
+    height:160px;
+}
+.xm-flash .flash-detail .good-item div{
+    text-align:center;
+}
+.xm-flash .flash-detail .good-item h3{
+    font-weight: 200;
+}
+.xm-flash .flash-detail .good-item p.price{
+    margin-top:15px;
+}
+.xm-flash .flash-detail .good-item p.text{
+    font-size:14px;
+    color:#e0e0e0;
+}
+.xm-flash .flash-detail .good-item p.price span.price-now{
+    color:red;
+    margin-right: 10px;
+}
+.xm-flash .flash-detail .good-item p.price span.price-pre{
+    text-decoration:line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zhanwei{
+    height:300px;
 }

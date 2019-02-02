@@ -125,7 +125,26 @@ $(function(){
             $li.children("div.children").toggle();
           }
       )
-    
+    /*****定时器 */
+    setInterval(function () {
+        var date = new Date;
+        var nowHour = parseInt(date.getHours())
+        var targetTime = nowHour +2;
+        $(".time-title").html(`${nowHour}:00场`)  
+        var nowMinutes = date.getMinutes()
+        var minutes = 60-nowMinutes-1
+        if(minutes<10){
+          $(".countdown>.box:eq(2)").html(`0${minutes}`)
+        }else{
+          $(".countdown>.box:eq(2)").html(`${minutes}`)
+        }
+        var nowSeconds = date.getSeconds()
+        var seconds = 60-nowSeconds-1
+        if(seconds<10){
+          $(".countdown>.box:eq(4)").html(`0${seconds}`)
+        }else{
+          $(".countdown>.box:eq(4)").html(`${seconds}`)
+        }},1000);
 
 
 
