@@ -261,19 +261,21 @@
 }
 /**sub-nav start***/
 .header .container .nav ul.sub-nav{
-    width:200px;
-    /* height:440px; */
+    width:234px;
+    height:460px;
     position:relative;
-    left:-76px;
-    padding:1.5rem 1rem 1.2rem 1.5rem;
+    left:-75px;
+    padding:1.5rem 0;
     top:20px;
     background-color:rgba(77, 61, 61, 0.7);
     z-index: 11;
+    box-sizing: border-box;
 }
-.header .container .nav ul.sub-nav li{
+.header .container .nav ul.sub-nav>li{
     line-height:42px;
+    padding:0 1.5rem;
 }
-.header .container .nav ul.sub-nav li a{
+.header .container .nav ul.sub-nav>li>a{
     color:#fff;
 }
 /**banner start****/
@@ -327,4 +329,48 @@
 }
 .banner>.indicator ul li:hover{
     background:rgba(73, 64, 64, 0.4);
+}
+/*sub-nav childrenlist*/
+.sub-nav .children-col-4{
+    width:992px;
+}
+.sub-nav .children-col-2{
+    width: 530px;
+}
+.sub-nav>li:hover{
+    background:#ff6700;
+}
+.sub-nav .children{
+    position:absolute;  
+    left:234px;
+    top:-1px;
+    background:#fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+    height:460px;
+    border-top:1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.sub-nav .children-list-col{
+    width:248px;
+}
+.sub-nav .children-list{
+    padding:2px 0;  
+    box-sizing:border-box;
+}
+.sub-nav .children-list .link{
+    display:block;
+    padding:18px 20px;
+    line-height: 40px;
+    width:265px;
+    box-sizing:border-box;
+
+}
+.sub-nav .children-list img{
+    width:40px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.sub-nav .children-list span{
+    color:#333333;
+    font-size:14px;
 }

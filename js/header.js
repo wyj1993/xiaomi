@@ -118,7 +118,13 @@ $(function(){
           move();
         }
       })
-      
+      /**** 轮播图上面的弹出层*** */
+    //   $("ul.sub-nav>li").hover(
+    //       function(){
+    //         var $li=$(this);
+    //         $li.children("div.children").toggle();
+    //       }
+    //   )
     
 
 
