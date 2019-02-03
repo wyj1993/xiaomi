@@ -296,8 +296,8 @@
         <div class="flash-head ">
             <h2 class="title">小米闪购</h2>
             <div class="flash-button">
-                <a class="fl" href="javascript:;"><em class="iconfont icon-youjiantou-copy"></em></a>
-                <a class="fl" href="javascript:;"><em class="iconfont icon-youjiantou"></em></a>
+                <a class="fl" href="javascript:;" data-slide="left"><em class="iconfont icon-youjiantou-copy"></em></a>
+                <a class="fl" href="javascript:;" data-slide="right"><em class="iconfont icon-youjiantou"></em></a>
             </div>
         </div>
         <div class="flash-detail clearfix">
@@ -318,7 +318,7 @@
                 </ul>
             </div>
             <div class="flash-goods fr">
-                <ul class="flash-goods-list clearfix">
+                <ul class="flash-goods-list clearfix" id="goodsUl">
                     <li class="good-item fl">
                         <div>
                             <a href="javascript:;"><img src="img/index/mitu.jpg"></a>
@@ -332,34 +332,125 @@
                     </li>
                     <li class="good-item fl">
                         <div>
-                            <a href="javascript:;"><img src="img/index/mitu.jpg"></a>
-                            <h3><a href="javascript:;">经典款米兔(25cm)白色</a></h3>
-                            <p class="text">Q萌升级，做你的贴心玩伴</p>
+                            <a href="javascript:;"><img src="img/index/yu.jpg"></a>
+                            <h3><a href="javascript:;">米家金元宝足金红包 金色</a></h3>
+                            <p class="text">真心真"金"</p>
                             <p class="price">
-                                <span class="price-now">9.9元</span>
-                                <span class="price-pre">49元</span>
+                                <span class="price-now">93元</span>
+                                <span class="price-pre">99元</span>
                             </p>
                         </div>
                     </li>
                     <li class="good-item fl">
                         <div>
-                            <a href="javascript:;"><img src="img/index/mitu.jpg"></a>
-                            <h3><a href="javascript:;">经典款米兔(25cm)白色</a></h3>
-                            <p class="text">Q萌升级，做你的贴心玩伴</p>
+                            <a href="javascript:;"><img src="img/index/mi-flash.jpg"></a>
+                            <h3><a href="javascript:;">小米8 SE 6GB+64GB 亮红</a></h3>
+                            <p class="text">三星AMOLED 全面屏 小屏旗舰</p>
                             <p class="price">
-                                <span class="price-now">9.9元</span>
-                                <span class="price-pre">49元</span>
+                                <span class="price-now">1599元</span>
+                                <span class="price-pre">1999元</span>
                             </p>
                         </div>
                     </li>
                     <li class="good-item fl">
                         <div>
-                            <a href="javascript:;"><img src="img/index/mitu.jpg"></a>
-                            <h3><a href="javascript:;">经典款米兔(25cm)白色</a></h3>
-                            <p class="text">Q萌升级，做你的贴心玩伴</p>
+                            <a href="javascript:;"><img src="img/index/mimirror.jpg"></a>
+                            <h3><a href="javascript:;">AMIRO 日光镜礼盒 白色</a></h3>
+                            <p class="text">照的清晰，还原自然妆容</p>
                             <p class="price">
-                                <span class="price-now">9.9元</span>
-                                <span class="price-pre">49元</span>
+                                <span class="price-now">199元</span>
+                                <span class="price-pre">210元</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="good-item fl">
+                        <div><!--5-->
+                            <a href="javascript:;"><img src="img/index/m-phone.jpg"></a>
+                            <h3><a href="javascript:;">小米6X 6GB+64GB 冰川蓝</a></h3>
+                            <p class="text">轻薄美观的拍照手机</p>
+                            <p class="price">
+                                <span class="price-now">1299元</span>
+                                <span class="price-pre">1799元</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="good-item fl">
+                        <div>
+                            <a href="javascript:;"><img src="img/index/m-phone2.jpg"></a>
+                            <h3><a href="javascript:;">小米6X 6GB+64GB 冰川蓝</a></h3>
+                            <p class="text">红米6 4GB+64GB 铂银灰 </p>
+                            <p class="price">
+                                <span class="price-now">749元</span>
+                                <span class="price-pre">999元</span>
+                            </p>
+                        </div>
+                    </li>
+                    <!--    text-overflow: ellipsis;
+    white-space: nowrap;-->
+                    <li class="good-item fl">
+                        <div>
+                            <a href="javascript:;"><img src="img/index/bijiben.jpg"></a>
+                            <h3><a href="javascript:;">小米游戏本15.6”8代i7 16G 1T+256G 1060 6G</a></h3>
+                            <p class="text">性能怪兽 信仰级游戏体验</p>
+                            <p class="price">
+                                <span class="price-now">8497元</span>
+                                <span class="price-pre">8999元</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="good-item fl">
+                        <div>
+                            <a href="javascript:;"><img src="img/index/m-phone3.png"></a>
+                            <h3><a href="javascript:;">小米8 屏幕指纹版 8GB+128GB 暮光金</a></h3>
+                            <p class="text">压感屏幕指纹，潮流外观</p>
+                            <p class="price">
+                                <span class="price-now">3199元</span>
+                                <span class="price-pre">3599元</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="good-item fl">
+                        <div>
+                            <a href="javascript:;"><img src="img/index/m-phone2.jpg"></a>
+                            <h3><a href="javascript:;">小米6X 6GB+64GB 冰川蓝</a></h3>
+                            <p class="text">红米6 4GB+64GB 铂银灰 </p>
+                            <p class="price">
+                                <span class="price-now">749元</span>
+                                <span class="price-pre">999元</span>
+                            </p>
+                        </div>
+                    </li>
+  
+                    <li class="good-item fl">
+                        <div>
+                            <a href="javascript:;"><img src="img/index/bijiben.jpg"></a>
+                            <h3><a href="javascript:;">小米游戏本15.6”8代i7 16G 1T+256G 1060 6G</a></h3>
+                            <p class="text">性能怪兽 信仰级游戏体验</p>
+                            <p class="price">
+                                <span class="price-now">8497元</span>
+                                <span class="price-pre">8999元</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="good-item fl">
+                        <div>
+                            <a href="javascript:;"><img src="img/index/m-phone3.png"></a>
+                            <h3><a href="javascript:;">小米8 屏幕指纹版 8GB+128GB 暮光金</a></h3>
+                            <p class="text">压感屏幕指纹，潮流外观</p>
+                            <p class="price">
+                                <span class="price-now">3199元</span>
+                                <span class="price-pre">3599元</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="good-item fl">
+                        <div>
+                            <a href="javascript:;"><img src="img/index/m-phone3.png"></a>
+                            <h3><a href="javascript:;">小米8 屏幕指纹版 8GB+128GB 暮光金</a></h3>
+                            <p class="text">压感屏幕指纹，潮流外观</p>
+                            <p class="price">
+                                <span class="price-now">3199元</span>
+                                <span class="price-pre">3599元</span>
                             </p>
                         </div>
                     </li>
