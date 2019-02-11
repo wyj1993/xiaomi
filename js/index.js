@@ -95,29 +95,29 @@ $(function(){
         /*******闪购箭头点击事件 */
         $(function(){
           var moveLi=0;
-          var lWidth=248;
-          var lCount=$("#goodsUl").children().length;
-          var ulWidth=lCount*lWidth;
+          var lWidth=248;//每个li的宽度
+          var lCount=$("#goodsUl").children().length;//li个数
+          var ulWidth=lCount*lWidth;//ul宽度
           $("#goodsUl").css("width",`${ulWidth}px`);
           $("[data-slide=right]").click(function(){
-            if(moveLi+4<lCount){
-            $(this).prev().children("em").css("color","#333");
-            moveLi+=4;
-            $("#goodsUl").css("left",`-${lWidth*moveLi}px`);
-          }
-          if(moveLi+4>=lCount){
-            $(this).children("em").css("color","#e0e0e0");
-          }
+            $(this).prev().children("em").css("color","#333");//1把同伴箭头换成可用颜色
+            if(moveLi+4<lCount){//2判断是否还有下一页
+              moveLi+=4;//如果有下一页，展示下一页
+              $("#goodsUl").css("left",`-${lWidth*moveLi}px`);
+              if(moveLi+4>=lCount){//3展示下一页后判断是否还有下一页，如果么有了就变灰
+                $(this).children("em").css("color","#e0e0e0");
+              }
+           }
           })
           $("[data-slide=left]").click(function(){
+            $(this).next().children("em").css("color","#333");
             if(moveLi>0){
-              $(this).next().children("em").css("color","#333");
-              moveLi-=4;
-            $("#goodsUl").css("left",`-${lWidth*moveLi}px`);
+                moveLi-=4;
+                $("#goodsUl").css("left",`-${lWidth*moveLi}px`);
+                if(moveLi<=0){
+                $(this).children("em").css("color","#e0e0e0");
+              }
            }
-           if(moveLi-4<0){
-            $(this).children("em").css("color","#e0e0e0");
-          }
           })
         })
 

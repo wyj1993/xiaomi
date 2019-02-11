@@ -563,8 +563,150 @@
 .xm-flash .flash-detail .good-item p.price span.price-pre{
     text-decoration:line-through;
 }
-
-
+/*黑鲨手机*/
+.heisha{
+    overflow:hidden;
+    height:120px;
+    margin:35px auto;
+}
+.heisha img{
+    height:120px;
+}
+.heisha a{
+    display:block;
+}
+/*手机*/
+#sellGoods{
+    background:#f5f5f5;
+    padding:30px ;
+}
+#sellGoods>div:first-child{
+    margin-bottom:30px;
+}
+#sellGoods .box-hd h2{
+    font-weight: 400;
+}
+#sellGoods .box-hd a{
+    display:block;
+    font-size:16px;
+    transition:all 0.1s;
+}
+#sellGoods .box-hd em{
+    background:#c4c4c4;
+    border-radius: 50%;
+    color:#fff;
+    font-size:12px;
+    font-weight: bold;
+    text-align: center;
+    padding:6px;
+    margin-left:10px;
+    line-height: 24px;
+}
+#sellGoods .box-hd a:hover{
+    color:#ff6700;
+}
+#sellGoods .box-hd a:hover em{
+    background:#ff6700;
+}
+#sellGoods .box-md .p-left img{
+    width:234px;
+    height:614px;
+}
+#sellGoods .box-md .p-left img:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+} 
+#sellGoods .box-md .p-right{
+    text-align:center;
+    width:992px;
+}
+#sellGoods .box-md .p-right li.phone-item{
+    background:#fff;
+    width:234px;
+    height:300px;
+    position: relative;
+    transition:all 0.2s;
+    margin-left:14px;
+    margin-bottom:14px;
+    padding:20px 10px;
+    box-sizing: border-box;
+    
+}
+#sellGoods .box-md .p-right li.phone-item:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+#sellGoods .box-md .p-right li.phone-item div.flag{
+    position: absolute;
+    width:64px;
+    height:20px;
+    line-height:20px;
+    background:#83c44e;
+    color:#fff;
+    font-size: 12px;
+    top:0;
+    left:50%;
+    margin-left:-32px;
+}
+#sellGoods .box-md .p-right li.phone-item div.hot_sell{
+    background:red;
+}
+#sellGoods .box-md .p-right li.phone-item img{
+    margin-bottom:20px;
+    margin-top:10px;
+}
+#sellGoods .box-md .p-right li.phone-item h3>a{
+    font-weight: 400;
+    font-size:14px;
+}
+#sellGoods .box-md .p-right li.phone-item p.desc{
+    font-size:12px;
+    color:#a8a8a8;
+    margin-bottom:8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:214px;
+    height:18px;
+}
+#sellGoods .box-md .p-right li.phone-item p.price{
+    color:#ff6700;
+    font-size:12px;
+}
+#sellGoods .box-md .p-right li.phone-item p.price span.del{
+    color:#a8a8a8;
+    text-decoration:line-through;
+}
+/* 家电 */
+#sellGoods>div.homeelec div.box-hd li{
+    margin-left:15px;
+}
+#sellGoods>div.homeelec div.box-md div.p-left li:first-child{
+    margin-bottom:8px;
+}
+#sellGoods>div.homeelec div.box-md div.p-left img{
+    width:234px;
+    height:300px;
+}
+#sellGoods .box-md .p-right li.phone-item h3{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#sellGoods div.homeelec .box-md .p-right li.item-small{
+    height: 93px;
+    padding-top:50px;
+    box-sizing: content-box;
+    padding:50px 0 0;
+    text-align:left;
+}
+#sellGoods div.homeelec .box-md .p-right li.item-small div{
+    margin-left:25px;
+}
+#sellGoods div.homeelec .box-md .p-right li.item-small div:last-child{
+    margin-top:-20px;
+}
+#sellGoods div.homeelec .box-md .p-right li.item-small:last-child div:first-child a{
+    font-size: 20px;
+}
 
 
 
