@@ -704,8 +704,14 @@
 #sellGoods div.homeelec .box-md .p-right li.item-small div:last-child{
     margin-top:-20px;
 }
-#sellGoods div.homeelec .box-md .p-right li.item-small:last-child div:first-child a{
+#sellGoods div.homeelec .box-md .p-right li.item-small:last-child div a{
     font-size: 20px;
+}
+#sellGoods div.homeelec .box-md .p-right li.item-small:last-child em{
+    font-size:46px;
+    color:#ff6700;
+    display:block;
+    margin-top:20px;
 }
 
 
