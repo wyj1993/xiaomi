@@ -149,7 +149,6 @@ $(function(){
         })
         /*点击关闭视频*/
         $("#vd p a").click(function(){
-            var $close=$(this);
             $("#shadow").removeClass("in");
             $("#vd video").get(0).pause();
             $("#vd").removeClass("movedown").addClass("moveup");
@@ -165,7 +164,6 @@ $(function(){
 
         /*家电模块，鼠标悬浮换div*/
         $("div.sellGoods:last>div.homeelec>div>div:first a").mouseenter(function(){
-          // console.log(0)
             var $a=$(this);
             $a.addClass("active").parent().siblings().children().removeClass("active");
             console.log( $a.addClass("active").siblings());
@@ -174,7 +172,7 @@ $(function(){
 
         /****内容点击事件 */
         $(function(){
-          var moved=0;
+          // var moved=0;
           var $ulContent=$("#content>div>div.parent>ul");
           var $li=$("#content>div>div.parent:first>ul>li");//第一个div中的li
           var $liSize=$li.size();//3
@@ -187,9 +185,31 @@ $(function(){
           //点击下面小点
           $liDot.click(function(){
               moved=$(this).index();
-              toggleContent();
+              toggleContent($(this));
         })
-          function toggleContent(){
+          function toggleContent(e){
+            var $btnRight;
+            var $btnLeft;
+            var $ulContent;
+            var $dot;
+            if(e.is("li")){
+              $btnRight = e.parents("div.indicator").next().children("a.right-btn");
+              $btnLeft = e.parents("div.indicator").next().children("a.left-btn");
+              $ulContent=e.parents("div.indicator").prev();
+              $dot = e;
+            }else if(e.is("a.left-btn")){
+              console.log(111)
+              $btnRight = e.next();
+              $btnLeft = e
+              $ulContent=e.parent().siblings("ul");
+              $dot = e.parent().prev().find("li").eq(moved);
+            }else{
+              console.log(222)
+              $btnRight = e;
+              $btnLeft = e.prev();
+              $ulContent=e.parent().siblings("ul");
+              $dot = e.parent().prev().find("li").eq(moved);       
+            }
             if(moved+1==$liSize){//禁用
               $btnRight.addClass("disabled");
             }else{
@@ -201,20 +221,23 @@ $(function(){
               $btnLeft.removeClass("disabled");
             }
             $ulContent.css("margin-left",`-${moved*$liWidth}px`);
-            $liDot.eq(moved).children("span").addClass("active").parent().siblings().children("span").removeClass("active");
+            $dot.children("span").addClass("active").parent().siblings().children("span").removeClass("active");
+
           }
             //右箭头点击事件
           $btnRight.click(function(){
-            if(!$btnRight.is(".disabled")){
+            console.log(5555)
+            if(!$(this).is(".disabled")){
                 moved++;
-                toggleContent()
+                toggleContent($(this));
             }
         })
           //左箭头点击事件
           $btnLeft.click(function(){
-            if(!$btnLeft.is(".disabled")){
+            console.log(3333)
+            if(!$(this).is(".disabled")){
                 moved--;
-                toggleContent();
+                toggleContent($(this));
             }
         })
       })
