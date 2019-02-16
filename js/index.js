@@ -214,7 +214,7 @@ $(function(){
               $btnLeft = e.parents("div.indicator").next().children("a.left-btn");
               $ulContent=e.parents("div.indicator").prev();
               $dot = e;
-              $liSize=e.parent().children().length;
+              $liSize=e.parent().children().length;//li个数不固定，所以动态获取
             }else if(e.is("a.left-btn")){
               $btnRight = e.next();
               $btnLeft = e
