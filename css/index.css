@@ -575,23 +575,12 @@
 .heisha a{
     display:block;
 }
-/*手机*/
-#sellGoods{
+/*手机和家电公共样式*/
+.sellGoods{
     background:#f5f5f5;
     padding:30px ;
 }
-#sellGoods>div:first-child{
-    margin-bottom:30px;
-}
-#sellGoods .box-hd h2{
-    font-weight: 400;
-}
-#sellGoods .box-hd a{
-    display:block;
-    font-size:16px;
-    transition:all 0.1s;
-}
-#sellGoods .box-hd em{
+.em-style{
     background:#c4c4c4;
     border-radius: 50%;
     color:#fff;
@@ -602,39 +591,18 @@
     margin-left:10px;
     line-height: 24px;
 }
-#sellGoods .box-hd a:hover{
-    color:#ff6700;
+.sellGoods>div:first-child{
+    margin-bottom:30px;
 }
-#sellGoods .box-hd a:hover em{
-    background:#ff6700;
+.sellGoods .box-hd h2{
+    font-weight: 400;
 }
-#sellGoods .box-md .p-left img{
-    width:234px;
-    height:614px;
+.sellGoods .box-hd a{
+    display:block;
+    font-size:16px;
+    transition:all 0.1s;
 }
-#sellGoods .box-md .p-left img:hover{
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
-} 
-#sellGoods .box-md .p-right{
-    text-align:center;
-    width:992px;
-}
-#sellGoods .box-md .p-right li.phone-item{
-    background:#fff;
-    width:234px;
-    height:300px;
-    position: relative;
-    transition:all 0.2s;
-    margin-left:14px;
-    margin-bottom:14px;
-    padding:20px 10px;
-    box-sizing: border-box;
-    
-}
-#sellGoods .box-md .p-right li.phone-item:hover{
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-#sellGoods .box-md .p-right li.phone-item div.flag{
+.sellGoods  div.flag{
     position: absolute;
     width:64px;
     height:20px;
@@ -646,76 +614,367 @@
     left:50%;
     margin-left:-32px;
 }
-#sellGoods .box-md .p-right li.phone-item div.hot_sell{
+.sellGoods .box-md .p-left img:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+} 
+.sellGoods .box-md .p-right{
+    text-align:center;
+    width:992px;
+}
+.sellGoods .box-md .p-right li.phone-item{
+    background:#fff;
+    width:234px;
+    height:300px;
+    position: relative;
+    transition:all 0.2s;
+    margin-left:14px;
+    margin-bottom:14px;
+    padding:20px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sellGoods .box-md .p-right li.phone-item:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.sellGoods .box-md .p-right li.phone-item div.hot_sell{
     background:red;
 }
-#sellGoods .box-md .p-right li.phone-item img{
+/*手机**/
+.sellGoods>div.phone .box-hd a:hover em{
+    background:#ff6700;
+}
+.sellGoods>div.phone .box-md div:first-child img{
+    width:234px;
+    height:614px;
+}
+.sellGoods .box-md .p-right li.phone-item img{
     margin-bottom:20px;
     margin-top:10px;
 }
-#sellGoods .box-md .p-right li.phone-item h3>a{
+.sellGoods .box-md .p-right li.phone-item h3>a{
     font-weight: 400;
     font-size:14px;
 }
-#sellGoods .box-md .p-right li.phone-item p.desc{
+.sellGoods .box-md .p-right li.phone-item p.desc{
     font-size:12px;
     color:#a8a8a8;
     margin-bottom:8px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     width:214px;
     height:18px;
 }
-#sellGoods .box-md .p-right li.phone-item p.price{
+.sellGoods .box-md .p-right li.phone-item p.price{
     color:#ff6700;
     font-size:12px;
 }
-#sellGoods .box-md .p-right li.phone-item p.price span.del{
+.sellGoods .box-md .p-right li.phone-item p.price span.del{
     color:#a8a8a8;
     text-decoration:line-through;
 }
 /* 家电 */
-#sellGoods>div.homeelec div.box-hd li{
+.sellGoods>div.homeelec div.box-hd li{
     margin-left:15px;
 }
-#sellGoods>div.homeelec div.box-md div.p-left li:first-child{
+.sellGoods>div.homeelec div.box-md div.p-left li:first-child{
     margin-bottom:8px;
 }
-#sellGoods>div.homeelec div.box-md div.p-left img{
+.sellGoods>div.homeelec div.box-md div.p-left img{
     width:234px;
     height:300px;
 }
-#sellGoods .box-md .p-right li.phone-item h3{
-    overflow:hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.sellGoods>div.homeelec .box-md{
+    position: relative;
 }
-#sellGoods div.homeelec .box-md .p-right li.item-small{
+.sellGoods>div.homeelec .box-md .p-right{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.sellGoods>div.homeelec .box-hd a.active{
+    color:#ff6700;
+    border-bottom:2px solid #ff6700;
+}
+.sellGoods>div.homeelec .box-md #content-1{
+    z-index: 10;
+}
+.sellGoods>div.homeelec .box-md .p-right li.item-small{
     height: 93px;
     padding-top:50px;
     box-sizing: content-box;
     padding:50px 0 0;
     text-align:left;
 }
-#sellGoods div.homeelec .box-md .p-right li.item-small div{
+.sellGoods>div.homeelec .box-md .p-right li.item-small div{
     margin-left:25px;
 }
-#sellGoods div.homeelec .box-md .p-right li.item-small div:last-child{
+.sellGoods>div.homeelec .box-md .p-right li.item-small div:last-child{
     margin-top:-20px;
 }
-#sellGoods div.homeelec .box-md .p-right li.item-small:last-child div a{
+.sellGoods>div.homeelec .box-md .p-right li.item-small:last-child div a{
     font-size: 20px;
 }
-#sellGoods div.homeelec .box-md .p-right li.item-small:last-child em{
+.sellGoods>div.homeelec .box-md .p-right li.item-small:last-child em{
     font-size:46px;
     color:#ff6700;
     display:block;
     margin-top:20px;
 }
+/*弹出层*/
+.sellGoods .box-md .p-right li.phone-item div.comment{
+    /* position: absolute; */
+    /* bottom:-80px;left:0; */
+    width:234px;
+    height:80px;
+    background:#ff6700;
+    padding:10px ;
+    transition:all 0.3s ease-in;
+    box-sizing: border-box;
+    text-align: left;
+    /* z-index: -1; */
+    margin-left:-10px;
+    margin-top:16px;   
+}
+.sellGoods .box-md .p-right li.phone-item div.comment p:first-child{
+    color:#fff;
+}
+.sellGoods .box-md .p-right li.phone-item div.comment p:last-child{
+    color:rgba(255,255,255,.54);
+}
+.sellGoods .box-md .p-right li.phone-item:hover div.comment{
+    transform: translateY(-80px);
+}
 
-
-
+/*content*/
+div#content{
+    padding-bottom:50px;
+}
+div#content>div:first-child h2{
+    font-weight: 400;
+}
+div#content>div>div.parent{
+    margin-right:14px;
+    overflow: hidden;
+    width:296px;
+    height:400px;
+}
+div#content>div>div.parent:nth-child(2){
+    border-top:1px solid #ffac13;
+}
+div#content>div>div.parent:last-child{
+    margin-right:0;
+    border-top:1px solid #0aa1ed;
+}
+div#content>div>div.parent:nth-child(3){
+    border-top:1px solid #83c44e;
+}
+div#content>div>div.parent:nth-child(4){
+    border-top:1px solid #e53935;
+}
+div#content>div>div.parent>ul>li{
+    width:296px;
+    height:400px;
+    background:#fff;
+    text-align: center;
+    padding:10px;
+    position: relative;
+    box-sizing: border-box;
+    transition:all 0.2s;
+}
+/* div#content>div>div.parent>ul>li.active{
+    display:block;
+} */
+div#content>div>div.parent li p.kinds{
+    color:#ffac13;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+div#content>div>div.parent li h4.title a{
+    font-size:22px;
+    color:#333;
+    font-weight: 400;
+}
+div#content>div>div.parent li h6.desc {
+    font-size:12px;
+    font-weight: 400;
+    color:#b0b0b0;
+    margin:5px 0;
+    padding:0 35px;
+}
+div#content>div>div.parent li p.price{
+    margin:10px;
+}
+div#content div.indicator{  
+    margin-top:10px;
+    position:absolute;
+    bottom:20px;
+    width:296px;
+    margin-left:-10px;
+}
+div#content div.indicator ul{
+    display:flex;
+    justify-content: center;
+}
+div#content div.indicator li{
+    padding:10px;
+}
+div#content div.indicator li span.dot{
+    border:2px solid #fff;
+    width:6px;
+    height:6px;
+    background:#b0b0b0;
+    margin:0 5px;
+    border-radius:50%;
+    display: block;
+}
+div#content div.indicator span.dot.active{
+    background:#fff;
+    border:2px solid #ff6700;
+}
+div#content>div.row>div.parent{
+    position: relative;
+}
+div#content  div.btn{
+    display:none;
+}
+div#content div.btn a.left-btn.disabled,div#content div.btn a.right-btn.disabled{
+    color:#fff;
+}
+div#content div.btn a.left-btn,div#content div.btn a.right-btn{
+    position:absolute;
+    display:block;
+    width:18px;
+    height:40px;
+    background:#ddd;
+    line-height:40px;
+    text-align:center;
+    top:50%;
+    margin-top:-20px;
+    font-weight: bold;
+}
+div#content  div.btn a.left-btn{
+    left:0;
+}
+div#content div.btn a.right-btn{
+    right:0;
+}
+div#content>div>div.parent>ul>li:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.2);
+    margin-top:-3px;
+    margin-bottom:3px;
+}
+div#content>div>div.parent:hover div.btn {
+    display: block;
+}
+/*视频*/
+div#content, .video{
+    background:#f5f5f5;
+}
+.video .v-head h2{
+    font-weight: 400;
+}
+.video .v-head div a{
+    font-size:16px;
+}
+.video .v-main li.item{
+    background:#fff;
+    width:296px;
+    height:285px;
+    text-align: center;
+    transition: all 0.3s;
+    margin-right:14px;
+}
+.video .v-main li.item:last-child{
+    margin-right: 0;
+}
+.video .v-main li.item:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-1%);
+}
+.video .v-main li.item h4.title{
+    margin-top:25px;
+    font-weight: 400;
+}
+.video .v-main li.item p.desc{
+    color:#a8a8a8;
+}
+.video .v-main li.item>div:first-child{
+    position: relative;
+}
+.video .v-main li.item i{
+    position: absolute;
+    color:#fff;
+    width:30px;
+    height:20px;
+    background:rgba(0,0,0,.3);
+    border:2px solid #fff;
+    border-radius: 15px;
+    bottom:13%;
+    left:8%;
+    font-size:14px;
+}
+.video .v-main li.item i:hover{
+    background:#ff6700;
+    border:2px solid #ff6700;
+}
+/* 弹出层大div */
+div.shadow{
+    width:100%;
+    height:8848px;
+    background-color:#000;
+    transition: opacity 0.5s linear;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 888;
+    /* display: none; */
+    pointer-events: none;
+}
+div.shadow.fade{
+    opacity: 0;    
+}
+div.shadow.fade.in{
+    opacity: 0.5;
+}
+#vd{
+    position:fixed;
+    background:#fff;
+    top:0;
+    left:50%;
+    margin-left:-440px;
+    margin-top:-1000px;
+    /* display: none; */
+    z-index: 1000;
+    height:536px;
+    overflow: hidden;
+    transition:all 1.5s;
+}
+.movedown{
+    transform: translateY(1150px);
+}
+.moveup{
+    transform: translateY(0px);
+}
+#vd p{
+    font-size:24px;
+    padding:15px;
+}
+#vd p a{
+    font-size:20px;
+}
+#vd>img,#vd video{
+    width:880px;
+}
+#vd img{
+    position: absolute;
+}
+#vd .ctrl{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-25px;
+    margin-top:-25px;
+    width:50px;
+    height:50px;
+}
 
 
 

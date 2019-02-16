@@ -463,14 +463,13 @@
             <img src="img/index/heisha.jpg" alt="">
         </a>
     </div>
-    
-    <div id="sellGoods">
-        <!-- 手机热卖 -->
+     <!-- 手机热卖 -->
+    <div class="sellGoods">
         <div class="w phone">
             <div class="row phone">
                 <div class="box-hd clearfix">
                     <h2 class="fl">手机</h2>
-                <div class="fr"><a href="javascript:;">查看全部<em class="iconfont icon-youjiantou"></em></a></div>
+                    <div class="fr"><a href="javascript:;">查看全部<em class="em-style iconfont icon-youjiantou"></em></a></div>
                 </div>
                 <div class="box-md clearfix">
                     <div class="p-left fl">
@@ -490,7 +489,7 @@
                             <li class="phone-item fl">
                                 <img src="img/index/pms_1524621350.77238418!220x220.jpg"  width=" 160" height="160">
                                 <h3><a href="javascript:;">小米play</a></h3>
-                                <p class="desc">内置每月10GB高速流量，高颜值流光渐变色</p>
+                                <p class="desc ellipsis">内置每月10GB高速流量，高颜值流光渐变色</p>
                                 <p class="price">1099元 </p>
                                 <div class="flag"><p>新品</p></div>
                             </li>
@@ -504,7 +503,7 @@
                             <li class="phone-item fl">
                                 <img src="img/index/pms_1528719461.20891365!220x220.jpg"  width=" 160" height="160">
                                 <h3><a href="javascript:;">小米MIX 2S 8GB+256GB</a></h3>
-                                <p class="desc">骁龙845 年度旗舰处理器，艺术品般陶瓷机身</p>
+                                <p class="desc ellipsis">骁龙845 年度旗舰处理器，艺术品般陶瓷机身</p>
                                 <p class="price">2899元 <span class="del">3399元</span></p>
                                 <div class="flag"><p>新品</p></div>
                             </li>
@@ -540,16 +539,18 @@
                     </div>
                 </div>
             </div>
-         </div>
-         <!-- 家电热卖 -->
+        </div> 
+    </div>
+        <!-- 家电热卖 -->
+    <div class="sellGoods">
         <div class="w homeelec">
             <div class="row">
                 <div class="box-hd clearfix">
                     <h2 class="fl">家电</h2>
                     <div class="fr">
                         <ul class="clearfix">
-                            <li class="fl"><a href="javascript:;">热门</a></li>
-                            <li class="fl"><a href="javascript:;">电视影音</a></li>
+                            <li class="fl"><a href="javascript:;" data-target="content-1" class="active">热门</a></li>
+                            <li class="fl"><a href="javascript:;" data-target="content-2">电视影音</a></li>
                             <li class="fl"><a href="javascript:;">电脑</a></li>
                             <li class="fl"><a href="javascript:;">家居</a></li>
                         </ul>
@@ -562,19 +563,27 @@
                             <li><a href="javascript:;"><img src="img/index/xmad_15123939053142_dFlAw.jpg"></a></li>
                         </ul>
                     </div>
-                    <div class="p-right fl">
+                    <div class="p-right fl " id="content-1">
                         <ul class="clearfix">
                             <li class="phone-item fl">
                                 <img src="img/index/pms_1.jpg"  width=" 160" height="160">
                                 <h3><a href="javascript:;">米家互联网空调</a></h3>
                                 <p class="desc">1.5匹变频 / 高效制冷热 / AI远程控制</p>
                                 <p class="price">2299元</p>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
                             </li>
                             <li class="phone-item fl">
                                 <img src="img/index/pms_2.jpg"  width=" 160" height="160">
                                 <h3><a href="javascript:;">米家激光投影电视 4K</a></h3>
                                 <p class="desc"></p>
                                 <p class="price">14999元 </p>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
                             </li>
                             <li class="phone-item fl">
                                 <img src="img/index/pms_4.jpg"  width=" 160" height="160">
@@ -582,6 +591,10 @@
                                 <p class="desc"></p>
                                 <p class="price">4199元</p>
                                 <div class="flag"><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
                             </li>
                             <li class="phone-item fl">
                                 <img src="img/index/pms_6.jpg"  width=" 160" height="160">
@@ -589,13 +602,21 @@
                                 <p class="desc">一杯水，是一家人的安心</p>
                                 <p class="price">99元 </p>
                                 <div class="flag"><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
                             </li>
                             <li class="phone-item fl">
                                 <img src="img/index/xmad_3.png"  width=" 160" height="160">
-                                <h3><a href="javascript:;">13.3"小米笔记本Air 四核i7 8G 256G MX150 银色</a></h3>
+                                <h3 class="ellipsis"><a href="javascript:;">13.3"小米笔记本Air 四核i7 8G 256G MX150 银色</a></h3>
                                 <p class="desc"></p>
                                 <p class="price">99元</p>
                                 <div class="flag"><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
                             </li>
                             <li class="phone-item fl">
                                 <img src="img/index/xmad_5.png"  width=" 160" height="160">
@@ -603,6 +624,10 @@
                                 <p class="desc">OLED 显示屏幕 / 激光颗粒物传感器</p>
                                 <p class="price">1299元 <span class="del">1399元</span></p>
                                 <div class="flag "><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
                             </li>
                             <li class="phone-item fl">
                                 <img src="img/index/xmad_7.png"  width=" 160" height="160">
@@ -610,6 +635,10 @@
                                 <p class="desc">用光线还原理想生活</p>
                                 <p class="price">399元</p>
                                 <div class="flag hot_sell"><p>享8折</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
                             </li>
                             <li class="phone-item fl item-small">
                                 <div class="fl">
@@ -619,6 +648,105 @@
                                 <div class="fl">
                                     <img src="img/index/pms_small.jpg"  width="80" height="80">
                                 </div>
+                                <!----->
+                            </li>
+                            <li class="phone-item fl item-small">
+                                <div class="fl">
+                                    <p><a href="javascript:;">浏览更多</a></p>
+                                    <span class="desc">热门</span>                           
+                                </div>
+                                <div class="fl">
+                                    <em class="iconfont icon-youjiantou1"></em>
+                                </div>                        
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-right fl" id="content-2">
+                        <ul class="clearfix">
+                            <li class="phone-item fl">
+                                <img src="img/index/pms_tv1.jpg"  width=" 160" height="160">
+                                <h3><a href="javascript:;">米家互联网空调</a></h3>
+                                <p class="desc">1.5匹变频 / 高效制冷热 / AI远程控制</p>
+                                <p class="price">2299元</p>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
+                            </li>
+                            <li class="phone-item fl">
+                                <img src="img/index/pms_tv2.jpg"  width=" 160" height="160">
+                                <h3><a href="javascript:;">米家激光投影电视 4K</a></h3>
+                                <p class="desc"></p>
+                                <p class="price">14999元 </p>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
+                            </li>
+                            <li class="phone-item fl">
+                                <img src="img/index/pms_tv3.jpg"  width=" 160" height="160">
+                                <h3><a href="javascript:;">15.6"笔记本 i5 4G MX110</a></h3>
+                                <p class="desc"></p>
+                                <p class="price">4199元</p>
+                                <div class="flag"><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
+                            </li>
+                            <li class="phone-item fl">
+                                <img src="img/index/pms_tv4.jpg"  width=" 160" height="160">
+                                <h3><a href="javascript:;">米家电水壶</a></h3>
+                                <p class="desc">一杯水，是一家人的安心</p>
+                                <p class="price">99元 </p>
+                                <div class="flag"><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
+                            </li>
+                            <li class="phone-item fl">
+                                <img src="img/index/pms_tv5.jpg"  width=" 160" height="160">
+                                <h3><a href="javascript:;">13.3"小米笔记本Air 四核i7 8G 256G MX150 银色</a></h3>
+                                <p class="desc"></p>
+                                <p class="price">99元</p>
+                                <div class="flag"><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
+                            </li>
+                            <li class="phone-item fl">
+                                <img src="img/index/pms_tv6.jpg"  width=" 160" height="160">
+                                <h3><a href="javascript:;">米家空气净化器 Pro</a></h3>
+                                <p class="desc">OLED 显示屏幕 / 激光颗粒物传感器</p>
+                                <p class="price">1299元 <span class="del">1399元</span></p>
+                                <div class="flag "><p>新品</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
+                            </li>
+                            <li class="phone-item fl">
+                                <img src="img/index/pms_tv7.jpg"  width=" 160" height="160">
+                                <h3><a href="javascript:;">米家LED吸顶灯</a></h3>
+                                <p class="desc">用光线还原理想生活</p>
+                                <p class="price">399元</p>
+                                <div class="flag hot_sell"><p>享8折</p></div>
+                                <div class="comment">
+                                    <p>看到就很喜欢，质量棒棒哒，特别喜欢，支持小米</p>
+                                    <p>来自山西太原的评价</p>
+                                </div>
+                            </li>
+                            <li class="phone-item fl item-small">
+                                <div class="fl">
+                                    <h3><a href="javascript:;">小米净水器</a></h3>
+                                    <p class="price">1999元</p>
+                                </div>
+                                <div class="fl">
+                                    <img src="img/index/pms_small.jpg"  width="80" height="80">
+                                </div>
+                                <!----->
                             </li>
                             <li class="phone-item fl item-small">
                                 <div class="fl">
@@ -633,8 +761,220 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     </div>
+    <!-- 内容 -->
+    <div id="content" class="clearfix">
+        <div class="row w">
+            <div><h2>内容</h2></div>
+            <div class="parent fl">
+                <ul class="clearfix">
+                    <li class="active fl">
+                        <p class="kinds">图书</p>
+                        <h4 class="title ellipsis"><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h4>
+                        <h6 class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </h6>
+                        <p class="price">29.37元</p>     
+                        <img src="img/index/5e5da924-84e3-4959-9e25-5891cdf30757.png">
+                    </li>
+                    <li class="fl">
+                        <p class="kinds">图书</p>
+                        <h4 class="title ellipsis"><a href="javascript:;">好吗好的</a></h4>
+                        <h6 class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</h6>
+                        <p class="price">17.99元</p>     
+                        <img src="img/index/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png">
+                    </li>
+                    <li class="fl">
+                        <p class="kinds">图书</p>
+                        <h4 class="title ellipsis"><a href="javascript:;"></a></h4>
+                        <h6 class="desc">海量好书，享受精品阅读时光</h6>
+                        <h6 class="desc">漂亮的中文排版，千万读者选择！</h6>
+                        <a href="javascript:;">前往多看阅读</a>   
+                        <img src="img/index/more-duokan.jpg">
+                    </li>
+                </ul>
+                <div class="indicator">
+                    <ul class="clearfix">
+                        <li class="fl "><span class="dot active"></span></li>
+                        <li class="fl"><span class="dot"></span></li>
+                        <li class="fl"><span class="dot"></span></li>
+                    </ul>
+                </div>
+                <div class="btn clearfix">
+                    <a href="javascript:;" class="left-btn disabled"><em class="iconfont icon-youjiantou-copy"></em></a>
+                    <a href="javascript:;" class="right-btn"><em class="iconfont icon-youjiantou "></em></a>
+                </div>
+            </div>
+            <div class="parent fl">
+                    <ul class="clearfix">
+                        <li class="active fl">
+                            <p class="kinds">图书</p>
+                            <h4 class="title ellipsis"><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h4>
+                            <h6 class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </h6>
+                            <p class="price">29.37元</p>     
+                            <img src="img/index/5e5da924-84e3-4959-9e25-5891cdf30757.png">
+                        </li>
+                        <li class="fl">
+                            <p class="kinds">图书</p>
+                            <h4 class="title ellipsis"><a href="javascript:;">好吗好的</a></h4>
+                            <h6 class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</h6>
+                            <p class="price">17.99元</p>     
+                            <img src="img/index/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png">
+                        </li>
+                        <li class="fl">
+                            <p class="kinds">图书</p>
+                            <h4 class="title ellipsis"><a href="javascript:;"></a></h4>
+                            <h6 class="desc">海量好书，享受精品阅读时光</h6>
+                            <h6 class="desc">漂亮的中文排版，千万读者选择！</h6>
+                            <a href="javascript:;">前往多看阅读</a>   
+                            <img src="img/index/more-duokan.jpg">
+                        </li>
+                    </ul>
+                    <div class="indicator">
+                        <ul class="clearfix">
+                            <li class="fl "><span class="dot active"></span></li>
+                            <li class="fl"><span class="dot"></span></li>
+                            <li class="fl"><span class="dot"></span></li>
+                        </ul>
+                    </div>
+                    <div class="btn clearfix">
+                        <a href="javascript:;" class="left-btn disabled"><em class="iconfont icon-youjiantou-copy"></em></a>
+                        <a href="javascript:;" class="right-btn"><em class="iconfont icon-youjiantou "></em></a>
+                    </div>
+            </div>
+            <div class="parent fl">
+                        <ul class="clearfix">
+                            <li class="active fl">
+                                <p class="kinds">图书</p>
+                                <h4 class="title ellipsis"><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h4>
+                                <h6 class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </h6>
+                                <p class="price">29.37元</p>     
+                                <img src="img/index/5e5da924-84e3-4959-9e25-5891cdf30757.png">
+                            </li>
+                            <li class="fl">
+                                <p class="kinds">图书</p>
+                                <h4 class="title ellipsis"><a href="javascript:;">好吗好的</a></h4>
+                                <h6 class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</h6>
+                                <p class="price">17.99元</p>     
+                                <img src="img/index/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png">
+                            </li>
+                            <li class="fl">
+                                <p class="kinds">图书</p>
+                                <h4 class="title ellipsis"><a href="javascript:;"></a></h4>
+                                <h6 class="desc">海量好书，享受精品阅读时光</h6>
+                                <h6 class="desc">漂亮的中文排版，千万读者选择！</h6>
+                                <a href="javascript:;">前往多看阅读</a>   
+                                <img src="img/index/more-duokan.jpg">
+                            </li>
+                        </ul>
+                        <div class="indicator">
+                            <ul class="clearfix">
+                                <li class="fl "><span class="dot active"></span></li>
+                                <li class="fl"><span class="dot"></span></li>
+                                <li class="fl"><span class="dot"></span></li>
+                            </ul>
+                        </div>
+                        <div class="btn clearfix">
+                            <a href="javascript:;" class="left-btn disabled"><em class="iconfont icon-youjiantou-copy"></em></a>
+                            <a href="javascript:;" class="right-btn"><em class="iconfont icon-youjiantou "></em></a>
+                        </div>
+            </div>
+            <div class="parent fl">
+                            <ul class="clearfix">
+                                <li class="active fl">
+                                    <p class="kinds">图书</p>
+                                    <h4 class="title ellipsis"><a href="javascript:;">哈利·波特与被诅咒的孩子</a></h4>
+                                    <h6 class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </h6>
+                                    <p class="price">29.37元</p>     
+                                    <img src="img/index/5e5da924-84e3-4959-9e25-5891cdf30757.png">
+                                </li>
+                                <li class="fl">
+                                    <p class="kinds">图书</p>
+                                    <h4 class="title ellipsis"><a href="javascript:;">好吗好的</a></h4>
+                                    <h6 class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</h6>
+                                    <p class="price">17.99元</p>     
+                                    <img src="img/index/61e1385e-54de-48f3-8717-5e4f4b1cdd14.png">
+                                </li>
+                                <li class="fl">
+                                    <p class="kinds">图书</p>
+                                    <h4 class="title ellipsis"><a href="javascript:;"></a></h4>
+                                    <h6 class="desc">海量好书，享受精品阅读时光</h6>
+                                    <h6 class="desc">漂亮的中文排版，千万读者选择！</h6>
+                                    <a href="javascript:;">前往多看阅读</a>   
+                                    <img src="img/index/more-duokan.jpg">
+                                </li>
+                            </ul>
+                            <div class="indicator">
+                                <ul class="clearfix">
+                                    <li class="fl "><span class="dot active"></span></li>
+                                    <li class="fl"><span class="dot"></span></li>
+                                    <li class="fl"><span class="dot"></span></li>
+                                </ul>
+                            </div>
+                            <div class="btn clearfix">
+                                <a href="javascript:;" class="left-btn disabled"><em class="iconfont icon-youjiantou-copy"></em></a>
+                                <a href="javascript:;" class="right-btn"><em class="iconfont icon-youjiantou "></em></a>
+                            </div>
+            </div>
+        </div>
+    </div>      
+    <!-- 视频 -->
+    <div class="video clearfix">
+        <div class="w">
+            <div class="v-head clearfix">
+                <h2 class="fl">视频</h2>
+                <div class="fr"><a href="javascript:;">查看全部<em class="em-style iconfont icon-youjiantou"></em></a></div>
+            </div>
+            <div class="v-main">
+                <ul class="clearfix">
+                    <li class="item fl">
+                        <div>
+                            <img src="img/index/x-1.jpg" width="296" height="180">
+                            <i class="icon-bofang1 iconfont"></i>
+                        </div>
+                        <h4 class="title">小米8,一部与众不同的手机</h4>
+                        <p class="desc">透明探索版，将科技与美学完美结合</p>
+                    </li>
+                    <li class="item fl">
+                        <div>
+                            <img src="img/index/x-2.jpg" width="296" height="180">
+                            <i class="icon-bofang1 iconfont"></i>
+                        </div>
+                        <h4 class="title">小米8,一部与众不同的手机</h4>
+                        <p class="desc">透明探索版，将科技与美学完美结合</p>
+                    </li>
+                    <li class="item fl">
+                        <div>
+                            <img src="img/index/x-3.jpg" width="296" height="180">
+                            <i class="icon-bofang1 iconfont"></i>
+                        </div>
+                        <h4 class="title">小米8,一部与众不同的手机</h4>
+                        <p class="desc">透明探索版，将科技与美学完美结合</p>
+                    </li>
+                    <li class="item fl">
+                        <div>
+                            <img src="img/index/x-4.jpg" width="296" height="180">
+                            <i class="icon-bofang1 iconfont"></i>
+                        </div>
+                        <h4 class="title">小米8,一部与众不同的手机</h4>
+                        <p class="desc">透明探索版，将科技与美学完美结合</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- 视频 -->
+    <div id="vd">
+        <p>一团火<a href="javascript:;" class="fr">X</a></p>
+        <div>
+            <img src="img/index/x-2.jpg" alt="">
+            <video src="img/index/m.mp4"></video>
+            <a class="ctrl"><img src="img/index/play.png"></a>
+        </div>
+    </div>
+    <!-- 巨幕 -->
+    <div class="shadow fade" id="shadow"></div>
     <div class="zhanwei w"></div>
+
 </body>
 </html>

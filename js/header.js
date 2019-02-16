@@ -24,6 +24,8 @@ $(function(){
             .siblings("div.search-hot-words").hide();
             $(this).siblings(".keyword-list").show();
     })
+
+    
     $(".header>.container form>input:text").blur(function(){
         $(this).css("border","1px solid #a8a8a8");
         $(this).next().css({

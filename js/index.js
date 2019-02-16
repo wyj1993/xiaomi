@@ -92,6 +92,9 @@ $(function(){
         }else{
           $(".countdown>.box:eq(2)").html(`${seconds}`)
         }},1000);
+
+
+
         /*******闪购箭头点击事件 */
         $(function(){
           var moveLi=0;
@@ -123,6 +126,98 @@ $(function(){
 
 
 
+        /*点击弹出视频框**/
+        $(".video .v-main li.item>div").click(function(){
+          $("#shadow").addClass("in");
+          $("#vd").removeClass("moveup").addClass("movedown");
+          
+        })
+        /**点击播放视频 */
+        $("#vd>div").click(function(){
+          $div=$(this);
+          var $v3=$("#vd video");
+          if($v3.get(0).paused){
+            $v3.get(0).play();
+            // $('video').trigger('play');
+            $v3.next().children("img").attr("src","img/index/pause.png");
+          }else{
+            $v3.get(0).pause();
+            // $('video').trigger('pause');
+            $v3.next().children("img").attr("src","img/index/play.png");
+          }
+          $div.children("img").hide();   
+        })
+        /*点击关闭视频*/
+        $("#vd p a").click(function(){
+            var $close=$(this);
+            $("#shadow").removeClass("in");
+            $("#vd video").get(0).pause();
+            $("#vd").removeClass("movedown").addClass("moveup");
+        })
+        $("#vd").hover(
+          function(){
+          $(this).find("div a").show();
+        },
+          function(){
+          $(this).find("div a").hide();
+        }
+        )
+
+        /*家电模块，鼠标悬浮换div*/
+        $("div.sellGoods:last>div.homeelec>div>div:first a").mouseenter(function(){
+          // console.log(0)
+            var $a=$(this);
+            $a.addClass("active").parent().siblings().children().removeClass("active");
+            console.log( $a.addClass("active").siblings());
+            $(`#${$a.attr("data-target")}`).css("z-index",999).siblings(".p-right").css("z-index",-1);
+        })
+
+        /****内容点击事件 */
+        $(function(){
+          var moved=0;
+          var $ulContent=$("#content>div>div.parent>ul");
+          var $li=$("#content>div>div.parent:first>ul>li");//第一个div中的li
+          var $liSize=$li.size();//3
+          var $liWidth=296;//276
+          var $ulWidth=$liWidth*$liSize;
+          var $btnRight=$("#content>div>div div.btn a.right-btn");
+          var $btnLeft=$("#content>div>div div.btn a.left-btn");
+          var $liDot=$("#content>div>div.parent div.indicator li");
+          $ulContent.css("width",`${$ulWidth}px`);
+          //点击下面小点
+          $liDot.click(function(){
+              moved=$(this).index();
+              toggleContent();
+        })
+          function toggleContent(){
+            if(moved+1==$liSize){//禁用
+              $btnRight.addClass("disabled");
+            }else{
+              $btnRight.removeClass("disabled");
+            }
+            if(moved==0){//禁用
+              $btnLeft.addClass("disabled");
+            }else{
+              $btnLeft.removeClass("disabled");
+            }
+            $ulContent.css("margin-left",`-${moved*$liWidth}px`);
+            $liDot.eq(moved).children("span").addClass("active").parent().siblings().children("span").removeClass("active");
+          }
+            //右箭头点击事件
+          $btnRight.click(function(){
+            if(!$btnRight.is(".disabled")){
+                moved++;
+                toggleContent()
+            }
+        })
+          //左箭头点击事件
+          $btnLeft.click(function(){
+            if(!$btnLeft.is(".disabled")){
+                moved--;
+                toggleContent();
+            }
+        })
+      })
 
 
 
@@ -132,8 +227,12 @@ $(function(){
 
 
 
+   
 
 
+
+
+        
 
 
 

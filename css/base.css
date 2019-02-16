@@ -41,3 +41,8 @@ li{
     right:0
 }
 .hide{display:none;}
+.ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
