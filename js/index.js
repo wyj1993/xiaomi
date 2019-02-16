@@ -172,43 +172,61 @@ $(function(){
 
         /****内容点击事件 */
         $(function(){
-          // var moved=0;
+          var arr=[0,0,0,0];//保存每个div对应的moved值
           var $ulContent=$("#content>div>div.parent>ul");
-          var $li=$("#content>div>div.parent:first>ul>li");//第一个div中的li
-          var $liSize=$li.size();//3
           var $liWidth=296;//276
-          var $ulWidth=$liWidth*$liSize;
           var $btnRight=$("#content>div>div div.btn a.right-btn");
           var $btnLeft=$("#content>div>div div.btn a.left-btn");
           var $liDot=$("#content>div>div.parent div.indicator li");
-          $ulContent.css("width",`${$ulWidth}px`);
+          $ulContent.css("width",`${liWidth*4}px`);
           //点击下面小点
           $liDot.click(function(){
-              moved=$(this).index();
-              toggleContent($(this));
-        })
-          function toggleContent(e){
+              //给数组中对应的div的下标赋值，这个值是小点下标 实质是初始化本div的moved，
+              arr[$(this).parents("div.parent").index()-1]=$(this).index();
+              toggleContent($(this),$(this).index());
+          })
+          //右箭头点击事件
+          $btnRight.click(function(){
+            if(!$(this).is(".disabled")){
+              var moved= arr[$(this).parents("div.parent").index()-1];
+              moved++;
+              arr[$(this).parents("div.parent").index()-1] = moved;
+              toggleContent($(this),moved);
+            }
+          })
+          //左箭头点击事件
+          $btnLeft.click(function(){
+            if(!$(this).is(".disabled")){
+              var moved= arr[$(this).parents("div.parent").index()-1];
+              moved--;
+              arr[$(this).parents("div.parent").index()-1] = moved;
+              toggleContent($(this),moved);
+              }
+          })
+          function toggleContent(e,moved){
             var $btnRight;
             var $btnLeft;
             var $ulContent;
             var $dot;
+            var $liSize;
             if(e.is("li")){
               $btnRight = e.parents("div.indicator").next().children("a.right-btn");
               $btnLeft = e.parents("div.indicator").next().children("a.left-btn");
               $ulContent=e.parents("div.indicator").prev();
               $dot = e;
+              $liSize=e.parent().children().length;
             }else if(e.is("a.left-btn")){
-              console.log(111)
               $btnRight = e.next();
               $btnLeft = e
               $ulContent=e.parent().siblings("ul");
               $dot = e.parent().prev().find("li").eq(moved);
+              $liSize=$ulContent.children().length;
             }else{
-              console.log(222)
               $btnRight = e;
               $btnLeft = e.prev();
               $ulContent=e.parent().siblings("ul");
-              $dot = e.parent().prev().find("li").eq(moved);       
+              $dot = e.parent().prev().find("li").eq(moved);  
+              $liSize=$ulContent.children().length;     
             }
             if(moved+1==$liSize){//禁用
               $btnRight.addClass("disabled");
@@ -222,24 +240,7 @@ $(function(){
             }
             $ulContent.css("margin-left",`-${moved*$liWidth}px`);
             $dot.children("span").addClass("active").parent().siblings().children("span").removeClass("active");
-
           }
-            //右箭头点击事件
-          $btnRight.click(function(){
-            console.log(5555)
-            if(!$(this).is(".disabled")){
-                moved++;
-                toggleContent($(this));
-            }
-        })
-          //左箭头点击事件
-          $btnLeft.click(function(){
-            console.log(3333)
-            if(!$(this).is(".disabled")){
-                moved--;
-                toggleContent($(this));
-            }
-        })
       })
 
 
