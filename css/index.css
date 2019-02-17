@@ -578,7 +578,7 @@
 /*手机和家电公共样式*/
 .sellGoods{
     background:#f5f5f5;
-    padding:30px ;
+    padding-top:30px;
 }
 .em-style{
     background:#c4c4c4;
@@ -591,9 +591,9 @@
     margin-left:10px;
     line-height: 24px;
 }
-.sellGoods>div:first-child{
+/* .sellGoods>div:first-child{
     margin-bottom:30px;
-}
+} */
 .sellGoods .box-hd h2{
     font-weight: 400;
 }
@@ -745,7 +745,8 @@
 
 /*content*/
 div#content{
-    padding-bottom:50px;
+    padding-top:30px;
+    background:#f5f5f5;  
 }
 div#content>div:first-child h2{
     font-weight: 400;
@@ -755,6 +756,7 @@ div#content>div>div.parent{
     overflow: hidden;
     width:296px;
     height:400px;
+    transition:all 0.5s;
 }
 div#content>div>div.parent:nth-child(2){
     border-top:1px solid #ffac13;
@@ -777,7 +779,9 @@ div#content>div>div.parent>ul>li{
     padding:10px;
     position: relative;
     box-sizing: border-box;
-    transition:all 0.2s;
+}
+div#content>div>div.parent>ul{
+    transition:all 0.5s;
 }
 /* div#content>div>div.parent>ul>li.active{
     display:block;
@@ -786,6 +790,15 @@ div#content>div>div.parent li p.kinds{
     color:#ffac13;
     margin-top:30px;
     margin-bottom:10px;
+}
+div#content>div>div.parent:nth-child(3) li p.kinds{
+    color:#83c44e;
+}
+div#content>div>div.parent:nth-child(4) li p.kinds{
+    color:#e53935;
+}
+div#content>div>div.parent:nth-child(5) li p.kinds{
+    color:#0aa1ed;
 }
 div#content>div>div.parent li h4.title a{
     font-size:22px;
@@ -801,6 +814,7 @@ div#content>div>div.parent li h6.desc {
 }
 div#content>div>div.parent li p.price{
     margin:10px;
+    height:21px;
 }
 div#content div.indicator{  
     margin-top:10px;
@@ -856,7 +870,7 @@ div#content  div.btn a.left-btn{
 div#content div.btn a.right-btn{
     right:0;
 }
-div#content>div>div.parent>ul>li:hover{
+div#content>div>div.parent:hover{
     box-shadow: 0 10px 15px rgba(0,0,0,.2);
     margin-top:-3px;
     margin-bottom:3px;
@@ -865,8 +879,9 @@ div#content>div>div.parent:hover div.btn {
     display: block;
 }
 /*视频*/
-div#content, .video{
+ .video{
     background:#f5f5f5;
+    padding:30px 0;
 }
 .video .v-head h2{
     font-weight: 400;
@@ -915,6 +930,7 @@ div#content, .video{
     background:#ff6700;
     border:2px solid #ff6700;
 }
+
 /* 弹出层大div */
 div.shadow{
     width:100%;
@@ -975,8 +991,37 @@ div.shadow.fade.in{
     width:50px;
     height:50px;
 }
-
-
+/**标志指示*/
+#sign{
+    position:fixed;
+    top:150px;
+    left:10px;
+    background:#918888;
+    z-index: 100;
+    display: none;
+}
+#sign .sign-item{
+    border-top:1px solid #b1aaaa;
+    transition:all 0.3s linear;
+}
+#sign .sign-btn{
+    display:block;
+    width:70px;
+    padding:10px 5px;
+    line-height:30px;
+    text-align:center;
+    color:#fefefe;
+    transition:all 0.1s;    
+}
+#sign div{
+    border-top:1px solid #b1aaaa;
+}
+#sign .sign-item:hover{
+    background: #d70b1c;
+}
+#sign .sign-item.active{
+    background:#d70b1c;
+}
 
 
 

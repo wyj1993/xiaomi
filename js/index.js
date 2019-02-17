@@ -242,7 +242,41 @@ $(function(){
             $dot.children("span").addClass("active").parent().siblings().children("span").removeClass("active");
           }
       })
-
+      /*左边固定的广告栏*/
+      var $floor= $("div.content-box");
+      $(window).scroll(function(){
+        var scrollTop=document.body.scrollTop
+                     ||document.documentElement.scrollTop;
+        var $f1=$(".sellGoods:first");
+        var offsetTop=$f1.offset().top;//1366
+        if(offsetTop<=scrollTop+innerHeight/2){
+          $("#sign").show();
+        }else{
+          $("#sign").hide();
+        }
+      // for(var i=$floor.length-1;i>=0;i--){
+      //   if($($floor[i]).offset().top<=scrollTop+innerHeight/2){
+      //    $($("#sign>ul>li")[i]).addClass("active").siblings().removeClass("active");
+      //    break;
+      // }
+      var m = 0
+      for(var i=0;i<$floor.length;i++){
+        if($($floor[i]).offset().top<=scrollTop+innerHeight/2){
+          m = i;
+        }
+      }
+      $($("#sign>ul>li")[m]).addClass("active").siblings().removeClass("active");
+   })
+   
+   $("#sign>ul").on("click","li",function(){
+      var $li=$(this);
+      var $offsetTop=$($floor[$li.index()]).offset().top;  
+     //$(window).scrollTop($offsetTop-50);   
+      $("html").stop(true).animate({
+        scrollTop:$offsetTop-50
+      },500)
+})
+       
 
 
 
