@@ -1,0 +1,18 @@
+.header>.container>.nav>ul>li:first-child>a{
+    background:none;
+    height:100px;
+    margin-top:0;
+    width:auto;
+}
+.header>.container>.nav>ul.nav-list>li:first-child{
+    width:100px;
+}
+.header>.container>.nav>ul>li:first-child>a span{
+    height:100px;
+}
+.header>.container>.nav>ul.nav-list>li:first-child div{
+    display:none;
+}
+.header .container .nav ul.sub-nav{
+    top:0;
+}
