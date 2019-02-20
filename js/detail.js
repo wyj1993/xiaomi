@@ -4,7 +4,7 @@ $(function(){
         function(){
         var $li=$(this);
         $li.children("div").toggle();
-            })
+    })
 
 
 
