@@ -64,6 +64,9 @@
 .header .container>.top_cart:hover{
     background:#fff;
 }
+.top_cart  .icon-gouwuche{
+    color:#ccc;
+}
 .header .container>.top_cart:hover a,.header .container>.top_cart:hover .icon-gouwuche{
     color:rgb(255,103,0);
 }
