@@ -6,16 +6,26 @@
 }
 .header>.container>.nav>ul.nav-list>li:first-child{
     width:100px;
+    position: relative;
 }
 .header>.container>.nav>ul>li:first-child>a span{
     height:100px;
 }
-.header>.container>.nav>ul.nav-list>li:first-child div{
-    display:none;
+/* .header>.container>.nav>ul.nav-list>li:first-child div{
+    display:block;
+    width:234px;
+    height:460px;
+    background-color:rgba(77, 61, 61, 0.7);
+    position: absolute;
+    z-index: 11;
 }
-.header .container .nav ul.sub-nav{
+.header>.container>.nav>ul.nav-list>li:first-child:hover div{
+    display:block;
+
+}
+/* .header .container .nav ul.sub-nav{
     top:0;
-}
+} */ */
 /**navbar*/
 div.box{
     height:60px;
